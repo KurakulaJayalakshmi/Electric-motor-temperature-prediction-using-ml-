@@ -1,18 +1,19 @@
 # Electric-motor-temperature-prediction-using-ml-Electric Motor Temperature Prediction
-Project Overview
+**Project Overview**
+
 This project aims to predict the temperature of a permanent magnet (pm) motor based on various operational parameters. By analyzing features such as voltages, currents, and coolant temperature, the goal is to develop a regression model that can accurately forecast the motor's internal temperature. This is crucial for condition monitoring, preventing overheating, and extending the lifespan of electric motors.
 
-Technical Highlights
+**Technical Highlights**
 Dataset: The project uses a dataset related to electric motor temperature. The specific dataset is titled measures_v2.csv and is likely from a Kaggle source related to electric motor temperature prediction, though the specific link is missing from the provided code block.
 Size: 20,000 entries, 13 columns.
-Key Features:
+**Key Features:**
 Motor Electrical Signals: u_q, u_d, i_d, i_q.
 Temperatures: coolant, stator_winding, stator_tooth, stator_yoke, ambient.
 Performance Metrics: motor_speed, torque.
 Approach:
-Data Cleaning: The dataset appears to be clean, with no missing values or duplicates in the sample used.
+**Data Cleaning:** The dataset appears to be clean, with no missing values or duplicates in the sample used.
 Exploratory Data Analysis: Histograms, boxplots, and a heatmap were used for visualization to understand data distributions and correlations. The heatmap reveals several strong correlations between the features.
-Regression Task: The target variable is pm, which likely represents the permanent magnet temperature.
+******Regression Task: ****T**he target variable is pm, which likely represents the permanent magnet temperature.
 Models Used:
 A suite of regression models were trained, including Ridge Regression, XGBoost, Random Forest, AdaBoost, Gradient Boosting, Bagging, Decision Tree, SVR, and K-Nearest Neighbors (KNN).
 Best R² Score:
@@ -28,7 +29,7 @@ Provide a foundational model for developing real-time condition monitoring and f
 Installation
 Clone the repository and download the dataset.
 
-Install the necessary libraries:
+**Install the necessary libraries:**
 
 pip install pandas numpy seaborn matplotlib scikit-learn xgboost
 Collaboration
